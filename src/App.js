@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import store from './redux/stores';
+import SelectionForm from './components/selection-form';
+
 import './App.css';
 
 class App extends Component {
@@ -8,7 +10,7 @@ class App extends Component {
     console.log(store.getState())
     return (
       <div className="App">
-        <p>testingtestingonetwothree</p>
+        <SelectionForm/>
       </div>
     )
   }
